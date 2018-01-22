@@ -1,1 +1,1 @@
-# vscode-heatseeker
+# heatseeker

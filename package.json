@@ -1,0 +1,41 @@
+{
+    "name": "heatseeker",
+    "version": "0.0.1",
+    "publisher": "mrkanister",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "repository": "github:mrkanister/vscode-heatseeker",
+    "license": "MIT",
+    "displayName": "heatseeker",
+    "description": "TODO",
+    "categories": [
+        "Other"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "heatseeker.sayHello",
+                "title": "Hello heatseeker"
+            }
+        ],
+        "configuration": []
+    },
+    "activationEvents": [
+        "onCommand:heatseeker.sayHello"
+    ],
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    }
+}

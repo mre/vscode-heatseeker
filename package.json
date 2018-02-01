@@ -5,11 +5,14 @@
     "engines": {
         "vscode": "^1.19.0"
     },
-    "repository": "github:mrkanister/vscode-heatseeker",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrkanister/vscode-heatseeker.git"
+    },
     "license": "MIT",
     "displayName": "heatseeker",
     "description": "Color your source code depending on how often each line is executed.",
-    "icon": "https://github.com/mrkanister/vscode-heatseeker/blob/master/contrib/icon.png",
+    "icon": "contrib/icon.png",
     "categories": [
         "Other"
     ],

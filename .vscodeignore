@@ -3,6 +3,7 @@
 */**
 
 # Whitelist what you need
+!contrib/icon.png
 !out/extension.js
 !CHANGELOG.md
 !LICENSE

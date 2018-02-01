@@ -8,7 +8,8 @@
     "repository": "github:mrkanister/vscode-heatseeker",
     "license": "MIT",
     "displayName": "heatseeker",
-    "description": "TODO",
+    "description": "Color your source code depending on how often each line is executed.",
+    "icon": "https://github.com/mrkanister/vscode-heatseeker/blob/master/contrib/icon.png",
     "categories": [
         "Other"
     ],
@@ -16,14 +17,28 @@
     "contributes": {
         "commands": [
             {
-                "command": "heatseeker.sayHello",
-                "title": "Hello heatseeker"
+                "title": "Apply",
+                "command": "heatseeker.applyHeatMap",
+                "category": "Heatseeker"
             }
         ],
-        "configuration": []
+        "configuration": {
+            "title": "Heatseeker Configuration",
+            "properties": {
+                "heatseeker.host": {
+                    "type": "string",
+                    "description": "Location of the server providing the data."
+                },
+                "heatseeker.background.opacity": {
+                    "type": "number",
+                    "default": 0.5,
+                    "description": "Specifies the opacity of the backgrund colors as a floating point number between 0 and 1."
+                }
+            }
+        }
     },
     "activationEvents": [
-        "onCommand:heatseeker.sayHello"
+        "onCommand:heatseeker.applyHeatMap"
     ],
     "devDependencies": {
         "typescript": "^2.6.1",

@@ -18,7 +18,7 @@ From within VSCode:
 2. Type `ext install heatseeker`
 3. Install the extension from the sidebar
 
-## Getting started
+## Configuration
 
 Go to the settings and configure the host where heatseeker is running:
 
@@ -36,6 +36,10 @@ You can configure heatseeker with the following additional parameters in the set
 "heatseeker.latest": false
 ```
 
+## Usage
+
+Open one of your source files, type <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>P</kbd>.  
+Then execute "Heatseeker: Apply". The source file should be colored in red and blue, according to line usage.
 
 ## Credits
 

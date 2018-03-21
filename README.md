@@ -4,9 +4,24 @@
 
 Color your source code depending on how often each line is executed.
 
+## Installation
+
+From the commandline:
+
+```
+code --install-extension mrkanister.heatseeker
+```
+
+From within VSCode:
+
+1. Hit <kbd>command</kbd> + <kbd>P</kbd>
+2. Type `ext install heatseeker`
+3. Install the extension from the sidebar
+
 ## Getting started
 
 TODO
+
 
 ## Credits
 

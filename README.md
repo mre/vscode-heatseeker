@@ -20,7 +20,21 @@ From within VSCode:
 
 ## Getting started
 
-TODO
+Go to the settings and configure the host where heatseeker is running:
+
+```
+"heatseeker.host": "http://example.com",
+```
+
+You can configure heatseeker with the following additional parameters in the settings:
+
+```
+// Specifies the opacity of the backgrund colors as a floating point number between 0 and 1.
+"heatseeker.background.opacity": 0.5,
+
+// Always use latest data from server instead of current commit id
+"heatseeker.latest": false
+```
 
 
 ## Credits
